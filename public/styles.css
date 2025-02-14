@@ -127,6 +127,12 @@ body {
   display: block;
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
