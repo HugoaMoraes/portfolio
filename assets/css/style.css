@@ -97,8 +97,9 @@
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease-in-out;
 }
+
 /*-----------------------------------*\
-  #DARK MODE
+  #LIGHT MODE
 \*-----------------------------------*/
 
 body.light-mode {
@@ -372,6 +373,11 @@ article.active {
     z-index: -1;
 }
 
+/* Remove a linha do primeiro item da timeline */
+.primeiro-item::before {
+    display: none !important;
+}
+
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -394,7 +400,7 @@ main {
 }
 
 .sidebar.active {
-    max-height: 405px;
+    max-height: 450px;
 }
 
 .sidebar-info {
@@ -1706,14 +1712,6 @@ textarea.form-input::-webkit-resizer {
         margin-bottom: 25px;
     }
 
-    /* Remove a linha do primeiro item da timeline */
-    .primeiro-item::before {
-        border: none !important;
-        box-shadow: none !important;
-        display: none !important;
-        content: none !important;
-    }
-
     /**
    * #PORTFOLIO, BLOG
    */
@@ -2156,7 +2154,7 @@ textarea.form-input::-webkit-resizer {
 
 @media only screen and (max-width: 600px) {
     .notification-col {
-        top: 1.5rem;
+        top: 3rem;
         right: 0.5rem;
         width: 98vw;
         max-width: 98vw;
